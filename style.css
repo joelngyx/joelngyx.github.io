@@ -19,7 +19,7 @@ button:hover, button:focus {color: #429EA6; background-position: left -100% bott
 .section h1 {font-size: 2rem; font-weight: 400;}
 .section img {height: 100px; border-radius: 20px; object-fit: contain; margin-top: 10px; margin-left: 0px;}
 
-.landing {margin-top: 5vh; display: flex; justify-content: center; padding: 1rem;}
+.landing {display: flex; justify-content: center; padding: 1rem;}
 .landing p {font-weight: 400; font-size: 3.5vw;}
 
 .item-div {width: 500px; border-style: solid; margin: 10px; padding-left: 10px; padding-right: 10px;}
