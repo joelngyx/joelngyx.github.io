@@ -7,10 +7,10 @@ function openModal (elementId) {
 function closeModal (elementId) {
   var el = document.getElementById(elementId);
 
-  if (elementId === 'school-project-cg2271') {
-    var vidEl = document.getElementById('cg2271vid');
-    vidEl.pause();
-  }
+  // if (elementId === 'school-project-cg2271') {
+  //   var vidEl = document.getElementById('cg2271vid');
+  //   vidEl.pause();
+  // }
   
   el.close();
 }
