@@ -1,16 +1,13 @@
 function openModal (elementId) {
   var el = document.getElementById(elementId);
-  document.body.style.position = 'fixed';
-  document.body.style.top = `-${window.scrollY}px`;
+  document.body.classList.add("stop-scrolling");
 
   el.showModal();
 }
 
 function closeModal (elementId) {
   var el = document.getElementById(elementId);
-
-  document.body.style.position = '';
-  document.body.style.top = `-${window.scrollY}px`;
+  document.body.classList.remove("stop-scrolling");
     
   el.close();
 }

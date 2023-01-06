@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,800&display=swap');
 
 body {overflow-x: hidden; overflow-x: hidden; padding-left: 5vw; padding-right: 5vw; background-color: #FCFCFC; color: #1D1A05;} 
+.stop-scrolling {height: 100%; overflow: hidden;}
 
 * {font-family: 'EB Garamond', serif; text-align: center; overflow-wrap: break-word; font-weight: 400; font-size: 1.5rem;}
 
