@@ -8,22 +8,46 @@
   </head>
   <body>
     <div>
+      <!-- Nav Bar -->
+      <ul class="nav-bar-horizontal">
+        <li><a href="#education">Education</a></li>
+        <li>/</li>
+        <li><a href="#skills">Skills</a></li>
+        <li>/</li>
+        <li><a href="#industry-experience">Industry Experience</a></li>
+        <li>/</li>
+        <li><a href="#school-projects">School Projects</a></li>
+        <li>/</li>
+        <li><a href="#personal-projects">Personal Projects</a></li>
+        <li>/</li>
+        <li><a href="#co-curriculars">Co-curriculars</a></li>
+      </ul>
+
+      <!-- Header -->
       <div class="landing"><h1>Hello there, I'm Joel Ng</h1></div>
       <div>
-        <button onclick="window.open('./documents/joel-resume.pdf')" >My Resume</button>
-        <button onclick="parent.location='mailto:joelngyx@gmail.com'">Drop an email</button></div>
+        <button onclick="window.open('./documents/joel-resume-jan23.pdf')">My Resume</button>
+        <button onclick="parent.location='mailto:joelngyx@gmail.com'">Drop an email</button>
+        <button onclick="window.open(`https://github.com/joelngyx`)">My GitHub</button>
+      </div>
+
+      <!-- Education -->
+      <a id="education"></a>
       <div class="section">
-        <div class="inline-center"><h1>Education</h1><img src="./assets/nus-logo.png"/></div> 
+        <div class="inline-center"><h1>Education</h1><img src="./assets/other-logos/nus-logo.png"/></div> 
         <p>I am a final year undergraduate at the National University of Singapore, where I major in Computer Engineering.</p>
       </div>
+
+      <!-- Skills -->
+      <a id="skills"></a>
       <div class="section">
         <div class="inline-center" style="margin-bottom: 25px;"><h1>Skills</h1>
-          <img src="./assets/java-logo.png"/>
-          <img src="./assets/js.png"/>
-          <img style="margin-left: 15px; height: 80px; padding-top: 10px;" src="./assets/react-logo.png"/>
-          <img style="margin-left: 20px; height: 80px; padding-top: 15px;" src="./assets/node-js-logo.png"/>
-          <img style="margin-left: 20px; height: 80px; padding-top: 15px;" src="./assets/postgres-logo.png"/>
-          <img style="margin-left: 25px; height: 80px; padding-top: 10px;" src="./assets/flutter-logo_drzj7u.png"/>
+          <img src="./assets/coding-logos/java-logo.png"/>
+          <img src="./assets/coding-logos/js-logo.png"/>
+          <img style="margin-left: 15px; height: 80px; padding-top: 10px;" src="./assets/coding-logos/react-logo.png"/>
+          <img style="margin-left: 20px; height: 80px; padding-top: 15px;" src="./assets/coding-logos/node-js-logo.png"/>
+          <img style="margin-left: 20px; height: 80px; padding-top: 15px;" src="./assets/coding-logos/postgres-logo.png"/>
+          <img style="margin-left: 25px; height: 80px; padding-top: 10px;" src="./assets/coding-logos/flutter-logo.png"/>
         </div>
         <div class="inline-center"><p class="p-bold">Programming Languages:</p>
           <p>JavaScript, Java, PostgreSQL, HTML, CSS, Python, C, C++, Dart</p></div>
@@ -32,170 +56,577 @@
         <div class="inline-center"><p class="p-bold">Tools:</p>
           <p>Git, Microsoft Excel, Figma</p></div>
       </div>
+
+      <!-- Internship Experience -->
+      <a id="industry-experience"></a>
       <div class="section">
-        <h1>Internship Experience</h1>
+        <h1>Industry Experience</h1>
         <div class="inline-center">
           <div class="item-div">
-            <img style="width: 200px;" src="./assets/thales-logo.png" />
+            <img style="width: 200px;" src="./assets/other-logos/thales-logo.png" />
             <p class="p-bold">Thales Solutions Asia (May 2021 - Nov 2021)</p>
             <p>Software Developer Intern in Thales’ Integrated Supervision & Control System (ISCS) Solutions Department.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="openModal('internship-thales')">View more</button>
           </div>
           <div class="item-div">
-            <img style="height: 125px;" src="./assets/tusi.png" />
+            <img style="height: 125px;" src="./assets/other-logos/tusi-logo.png" />
             <p class="p-bold">Tusitala Books (May 2022 - Present)</p>
             <p>Web Developer Intern at Tusitala Books.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="openModal('internship-tusitala')">View more</button>
           </div>
         </div>
       </div>
+
+      <!-- School Projects -->
+      <a id="school-projects"></a>
       <div class="section">
         <h1>School Projects</h1>
         <div class="inline-center">
           <div class="item2-div">
-            <img src="./assets/orbital.png"/>
+            <img src="./assets/school-project-assets/orbital.png"/>
             <p class="p-bold">CP2106: Independent Software Development Project (Orbital)</p>
-            <p>An Android application on which users can create chatrooms that can be joined by other users in the vicinity.
-               The application was intended to facilitate discussions in seminars and lectures.
+            <p>
+              An Android application on which users can create chatrooms that can be joined by other users in the vicinity.
+              The application was intended to facilitate discussions in seminars and lectures.
             </p>
             <p>Built with Flutter and Firebase.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="openModal('school-project-cp2106')">View more</button>
           </div>
           <div class="item2-div">
-            <img src="./assets/3240tp.png" />
+            <img src="./assets/school-project-assets/3240tp.png" />
             <p class="p-bold">CS3240: Interaction Design [Team Project]</p>
-            <p>A high-fidelity (hi-fi) prototype of an application that users can use to discover new hiking trails in Singapore.
+            <p>
+              A high-fidelity (hi-fi) prototype of an application that users can use to discover new hiking trails in Singapore.
               This prototype was developed with various User Experience (UX) research methods.
             </p>
             <p>Built with Figma.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="openModal('school-project-cs3240-team')">View more</button>
           </div>
         </div>
         <div class="inline-center">
           <div class="item2-div">
-            <img src="./assets/3240ide.png"/>
+            <img src="./assets/school-project-assets/3240ide.png"/>
             <p class="p-bold">CS3240: Interaction Design [Individual Project]</p>
-            <p>A high-fidelity (hi-fi) prototype of an application that users can use to learn french.
+            <p>
+              A high-fidelity (hi-fi) prototype of an application that users can use to learn french.
               This prototype was developed with various User Experience (UX) research methods.
             </p>
             <p>Built with Figma.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="openModal('school-project-cs3240-individual')">View more</button>
           </div>
           <div class="item2-div">
-            <img src="./assets/cs2113t.png" />
+            <img src="./assets/school-project-assets/cs2113t.png" />
             <p class="p-bold">CS2113T: Software Engineering & Object-Oriented Programming</p>
             <p>A Command Line Interface (CLI) application targeted at fellow university students, with the purpose of making 
               the learning of programming concepts more engaging.</p>
             <p>Built with Java.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="openModal('school-project-cs2113t')">View more</button>
           </div>
         </div>
         <div class="inline-center">
           <div class="item2-div">
-            <img src="./assets/cg2271.png"/>
+            <img src="./assets/school-project-assets/cg2271.png"/>
             <p class="p-bold">CG2271: Real-Time Operating Systems</p>
-            <p>A robotic vehicle that is able to be controlled by an Android application via a Bluetooth Low Energy (BLE)
+            <p>
+              A robotic vehicle that is able to be controlled by an Android application via a Bluetooth Low Energy (BLE)
               connection. The robot has various functionalities, such as playing music and a self-driving mode. 
             </p>
-            <p>Built on a FRDM-KL25Z microcontroller, with CMSIS-RTOS RTX (a Real Time Operating System interface for 
-              Cortex-M processor-based devices) for scheduling and threading. Programmed with C.
+            <p>
+              Built with C.
             </p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="openModal('school-project-cg2271')">View more</button>
           </div>
           <div class="item2-div">
-            <img src="./assets/capstone.png" />
+            <img src="./assets/school-project-assets/capstone.png" />
             <p class="p-bold">CG4002: Computer Engineering Capstone Project</p>
-            <p>A laser tag system that can support 2 players. The system involves Artificial Intelligence (to detect players' gestures) 
-              hardware components, an application, and a Bluetooth Low Energy (BLE) connection that connects the various parts of 
-              the system.</p>
+            <p>
+              A laser tag system that can support 2 players. The system involves Artificial Intelligence (to detect players' 
+              gestures) hardware components, an application, and a Bluetooth Low Energy (BLE) connection that connects the 
+              various parts of the system.
+            </p>
             <p>My part in the project (i.e., establishing and maintaining BLE connections) was built with Python and C++.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="openModal('school-project-cg4002')">View more</button>
           </div>
         </div>
       </div>
+
+      <!-- Personal Projects -->
+      <a id="personal-projects"></a>
       <div class="section">
         <h1>Personal Projects</h1>
         <div class="inline-center">
           <div class="item2-div">
-            <img src="./assets/tuneabout.png"/>
+            <img src="./assets/personal-projects-assets/tuneabout.png"/>
             <p class="p-bold">Tune About</p>
-            <p>A web application on which users can view information about a song, such as the song's lyrics,
+            <p>
+              A web application on which users can view information about a song, such as the song's lyrics,
               relevant posts about the song on Reddit, and links to the song's pages on websites such as Genius.com.
             </p>
             <p>Built with React JS, Bootstrap, iTunes Public Search API, and Reddit API.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="window.open(`https://github.com/joelngyx/Tune_About`)">View Code</button>
+            <button onclick="window.open(`https://tuneabout.netlify.app`)">View Live Site</button>
           </div>
           <div class="item2-div">
-            <img src="./assets/dontshootstinky.png" />
+            <img src="./assets/personal-projects-assets/dontshootstinky.png" />
             <p class="p-bold">Don't Shoot Stinky</p>
             <p>A web game based on the infamous game, Russian Roulette. Players can submit their scores, and 
               vie for the top positions on the scoreboard.</p>
             <p>Built with PostgreSQL, Express, React JS, SASS, and Node JS.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="window.open(`https://github.com/joelngyx/Don-t_Shoot_Stinky`)">View Code</button>
+            <button onclick="window.open(`https://dontshootstinky.netlify.app/`)">View Live Site</button>
           </div>
         </div>
         <div class="inline-center">
           <div class="item2-div">
-            <img src="./assets/textlaundry.png"/>
+            <img src="./assets/personal-projects-assets/textlaundry.png"/>
             <p class="p-bold">Text Laundry</p>
             <p>A web application on which users can edit chunks of text with Regular Expressions (RegEx).</p>
             <p>Built with React JS, Bootstrap and SASS.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="window.open(`https://github.com/joelngyx/Text_Laundry`)">View Code</button>
+            <button onclick="window.open(`https://textlaundry.netlify.app/`)">View Live Site</button>
           </div>
           <div class="item2-div">
-            <img src="./assets/capcalc.png" />
+            <img src="./assets/personal-projects-assets/capcalc.png" />
             <p class="p-bold">CAP Calculator</p>
             <p>An excel sheet that facilitates the calculation of the Cumulative Average Point (CAP)
               of an undergraduate from the National University of Singapore. 
             </p>
             <p>Built with Microsoft Excel.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="window.open(`https://github.com/joelngyx/CAP_Calculator`)">View Code</button>
+            <button onclick="window.open(`https://github.com/joelngyx/CAP_Calculator/releases/tag/v1.1`)">Download CAP Calculator</button>
           </div>
         </div>
         <div class="inline-center">
           <div class="item2-div">
-            <img src="./assets/indecisive.png"/>
+            <img src="./assets/personal-projects-assets/indecisive.png"/>
             <p class="p-bold">Indecisive Web App</p>
             <p>A web application that randomly chooses choices provided by the user.</p>
             <p>Built with HTML, CSS, Bootstrap, and JavaScript.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="window.open(`https://github.com/joelngyx/Indecisive_Web_App`)">View Code</button>
+            <button onclick="window.open(`https://indecisivewebapp.netlify.app/`)">View Live Site</button>
           </div>
           <div class="item2-div">
-            <img src="./assets/browsergarage.png" />
+            <img src="./assets/personal-projects-assets/browsergarage.png" />
             <p class="p-bold">Browser Garage</p>
             <p>A web application loosely based on the popular application Garage Band. On this web application,
               users can map sounds provided to keys on their keyboard, upon which they could make and record
               music.
             </p>
             <p>Built with React JS, Bootstrap, and Audio Web API.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="window.open(`https://github.com/joelngyx/Browser_Garage`)">View Code</button>
+            <button onclick="window.open(`https://browsergarage.netlify.app/`)">View Live Site</button>
           </div>
         </div>
       </div>
+
+      <!-- Co-curriculars -->
+      <a id="co-curriculars"></a>
       <div class="section">
         <h1>Co-curriculars</h1>
         <div class="inline-center">
           <div class="item2-div">
-            <img src="./assets/arttero3.png"/>
-            <p class="p-bold">NUS Arttero: Publicity Manager</p>
-            <p>NUS Arttero is an interest group at the National University of Singapore centered around visual arts.
+            <img src="./assets/arttero-assets/arttero3.png"/>
+            <p class="p-bold">NUS Arttero: Publicity Manager (Sept 2020 - Dec 2021)</p>
+            <p>
+              NUS Arttero is an interest group at the National University of Singapore centered around visual arts.
               As a publicity manager, I manage the interest group's social media presence, among other responsibilities.
             </p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="openModal('arttero')">View more</button>
           </div>
           <div class="item2-div" >
-            <img src="./assets/myart.png"/>
+            <img src="./assets/my-art/my-art-4.png"/>
             <p class="p-bold">My General Interest in Art</p>
             <p>Art has been a lifelong pursuit of mine. I've had experience with many mediums, from acrylics to colour pencils, 
               but I am most fond of making art with pen and ink.</p>
-            <button onclick="openModal('myId')">View more</button>
+            <button onclick="openModal('myart')">View more</button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Pop-up boxes -->
+    <!-- Internship Pop-up boxes -->
     <dialog style="width: 80vw; min-height: 80vh;" id="myId" close>
+      <h2>Hello</h2>
       <div><button onclick="closeModal(`myId`)">Close</button></div>
-      I am still adding content to the pop-ups!
+    </dialog>
+    <dialog id="internship-thales" close>
+      <div class="close-btn"><button onclick="closeModal(`internship-thales`)">Close</button></div>
+      <h2>My experience as a Software Developer Intern at Thales Solutions Asia</h2>
+      <img src="./assets/internship-thales/photo_2023-01-04 14.43.36.jpeg" alt="photo of me and my colleagues at Thales">
+      <p class="p-italics" style="text-align: center">That's me in the middle.</p>
+      <p class="p-bold">About</p>
+      <p>
+        At Thales, I mostly worked on the Replayer Project. This was an ongoing project with the 
+        Land Transport Authority (LTA), to create an desktop application. 
+        This application would be used by LTA personnel to simulate track activity along the North-East Line (NEL).
+        Such simulations would be helpful for training LTA personnel in reacting to various circumstances.
+      </p>
+      <p class="p-bold">Contributions</p>
+      <ul>
+        <li><p>
+          I developed the Graphical User Interface (GUI) of the application with Python Tkiner. 
+          The GUI was based on a design provided by another department.
+        </p></li>
+        <li><p>
+          I worked with my team to provide and implemented possible solutions to simulate track activity. 
+          The implementation was done with both Python and C++.
+        </p></li>
+        <li><p>
+          I designed and presented to my superiors and colleagues on a solution that would provide LTA personnel the ability 
+          to set and synchronize the date and time on all relevant servers when a simulation is being performed.
+        </p></li>
+      </ul>
+      <p class="p-bold">Takeaways</p>
+      <ul>
+        <li><p>
+          I picked up Python, and was able to use my existing C++ and Linux knowledge into practice in a professional
+          workplace setting.
+        </p></li>
+        <li><p>
+          I learned about, and applied common software engineering practices, including some of the standard practices defined by the 
+          Institute of Electical and Electronics Engineers (IEEE).
+        </p></li>
+        <li><p>
+          I took part in my team's Agile workflow, by using Jira (an issue-tracking tool) and participating in bi-weekly sprints.
+        </p></li>
+        <li><p>
+          I had experience creating presentations about my work, and enunciating problems and possible solutions to my superiors.
+        </p></li>
+      </ul>
+    </dialog>
+    <dialog id="internship-tusitala" close>
+      <div class="close-btn"><button onclick="closeModal(`internship-tusitala`)">Close</button></div>
+      <h2>My experience as a Web Developer Intern at Tusitala Books</h2>
+      <p class="p-bold">About</p>
+      <p>
+        At Tusitala Books, I developed microsites and web applications for the company's clients, based on the Figma prototypes
+        developed by the company's designer. Some of the company's clients include Singapore HeritageFest and Esplanade. These 
+        projects are mostly about creating digital experiences of local literary/art works.
+      </p>
+      <p class="p-bold">Contributions</p>
+      <p>Development of the Second Edition of Esplanade's Little Red Comma</p>
+      <ul>
+        <li><p>
+          Little Red Comma is a programme commissioned by Esplanade Offstage, and backed by the National Arts Council.
+          The programme combines Singaporean literature with digital media.
+        </p></li>
+        <li><p>
+          I participated heavily in the development of some of the microsites in the second edition
+          of the Little Red Comma. I mostly used Front-End technologies, such as React JS, Bootstrap and SASS.
+        </p></li>
+        <li><p>You could view some of these microsites through the buttons below:</p></li>
+      </ul>
+      <div><button onclick="window.open(`https://littleredcomma.esplanade.com/chinatown-I/?_gl=1*yu58bb*_ga*MTEyMDE5MDg1MC4xNjcyODQ4MzMw*_ga_PKW8Y1FT7K*MTY3Mjg0ODMzMC4xLjEuMTY3Mjg0ODQwNy4wLjAuMA..`)">Microsite 1</button>
+        <button onclick="window.open(`https://littleredcomma.esplanade.com/a-story-or-history-perhaps/?_gl=1*mq4erg*_ga*MTYyMzI4MjIyMy4xNjYwMzIwMDAw*_ga_PKW8Y1FT7K*MTY3Mjg0ODYwNy4xOC4wLjE2NzI4NDg2MDguMC4wLjA.`)">Microsite 2</button>
+        <button onclick="window.open(`https://littleredcomma.esplanade.com/the-ostrich-of-kampong-glam/?_gl=1*1na75rm*_ga*MTYyMzI4MjIyMy4xNjYwMzIwMDAw*_ga_PKW8Y1FT7K*MTY3Mjg0ODYwNy4xOC4xLjE2NzI4NDg3MzcuMC4wLjA.`)">Microsite 3</button>
+      </div>
+      <p>Development of other web applications and microsites</p>
+      <ul>
+        <li><p>I developed and updated other microsites, based on the client's feedback.</p></li>
+        <li><p>Such tasks required me to utilize popular JavaScript libraries such as Mapbox GL JS, Howl JS, and A-Frame.</p></li>
+        <li><p>I am currently developing an Augmented Reality (AR) web application using 8th Wall.</p></li>
+      </ul>
+      <p class="p-bold">Takeaways</p>
+      <ul>
+        <li><p>
+          I picked up many technologies used in Front-End Development, and was able to use them in a professional workplace
+          setting, with considerable time constraints.
+        </p></li>
+        <li><p>
+          I was able to further develop my communication skills. This is via opportunities to participate in the ideation process 
+          for the company's project pitches, and updating clients regarding the progress of the company's work. In addition, I helped 
+          man the company's booth at the Singapore Week of Innovation and Technology (SWITCH) Conference 2022, during which I explained
+          the company's projects to other professionals at the conference.
+        </p></li>
+      </ul>
+    </dialog>
+
+    <!-- School Projects Pop-up boxes -->
+    <dialog id="school-project-cp2106" close>
+      <div class="close-btn"><button onclick="closeModal(`school-project-cp2106`)">Close</button></div>
+      <h2>QuerIt - A Localized Chatroom Application</h2>
+      <p class="p-bold">Motivation</p>
+      <p>
+        Being fairly introverted, speaking up in a lecture to clarify doubts can be rather daunting. And even if we did voice our doubts,
+        the act could be disruptive to our peers. We did notice that there were already various applications used by professors 
+        in school for students to discuss and raise their doubts, such as Pigeonhole Live. However, these tools often came with 
+        issues- most commonly, faulty links. QuerIt aims to solve this issue by allowing anyone with a mobile phone to simply enable 
+        their GPS, and join the chatroom created by the speaker/professor/teaching assistant.
+      </p>
+      <p class="p-bold">Functionalities</p>
+      <ul>
+        <li><p>
+          Users can sign in after creating an account, or anonymously, without creating an account.
+        </p></li>
+        <li><p>
+          Users can create a chatroom and set a distance, such that other users within this distance would be able to 
+          join this chatroom. 
+        </p></li>
+        <li><p>
+          Inside chatrooms, users can post threads. All users in the chatroom will be able to comment on the thread.
+        </p></li>
+        <li><p>
+          Users can upvote/downvote threads and comments in the chatroom they are currently in.
+        </p></li>
+        <li><p>
+          Users who are logged in with their accounts can archive comments for future reference.
+        </p></li>
+      </ul>
+      <p class="p-bold">Trying out QuerIt</p>
+      <p>
+        Unfortunately, QuerIt only works on Android 10.0, a common version of Android when the application was developed.
+        However, QuerIt can still run on an Android emulator with Android 10.0, or with an Android device with 
+        Android 10.0. Download the .apk file through the "Download QuerIt" button below, and install it on an 
+        Android emulator/device. 
+      </p>
+      <div>
+        <button onclick="window.open(`https://github.com/joelngyx/CP2106_2020_QuerIt`)">View Code</button>
+        <button onclick="window.open(`https://github.com/joelngyx/CP2106_2020_QuerIt/releases`)">Download QuerIt</button>
+      </div>
+    </dialog>
+    <dialog id="school-project-cs3240-team" close>
+      <div class="close-btn"><button onclick="closeModal(`school-project-cs3240-team`)">Close</button></div>
+      <h2>HikingHelper</h2>
+      <p class="p-bold">Motivation</p>
+      <p>
+        This high-fidelity prototype is of a hypothetical application that helps users discover, rate, and share new hiking trails
+        with others. The prototype was the result of a multi-step design process, with required the practice of various User Interface
+        /User Experience (UI/UX) principles.
+      </p>
+      <p class="p-bold">Design Process</p>
+      <ul>
+        <li><p>
+          Ideation: this involved a brainstorm process that comprised of methods such as Crazy 8s (a fast sketching exercise to help
+          generate ideas).
+        </p></li>
+        <li><p>
+          User research: we identified our idea's primary and secondary
+          users. Based on our user identification process, we conducted user recruitment and user study. The latter involved
+          the use of surveys on Google Forms and interviews over video call.
+        </p></li>
+        <li><p>
+          Identifying user tasks: based on the findings from the user study, we came up with user scenarios and tasks, which were
+          then reflected in storyboards.
+        </p></li>
+        <li><p>
+          Low-fidelity Prototype: Balsamiq was used to quickly create Lo-Fi prototypes.
+        </p></li>
+        <li><p>
+          High-fidelity Prototype: Figma was used to create a hi-fi prototype, based on the best aspects of each member's Lo-Fi prototype.
+        </p></li>
+        <li><p>
+          User testing: user testing with the hi-fi prototype was performed by conducting heuristic evaluation (with the teaching staff), 
+          general usability testing (using Maze), and detailed usability testing, which involved participants using the prototype and 
+          vocalizing their thought process over a Zoom call.
+        </p></li>
+        <li><p>
+          Improving the Hi-Fi prototype based on feedback and findings from user testing.
+        </p></li>
+      </ul>
+      <p class="p-bold">Trying out HikingHelper</p>
+      <p>
+        The Hi-Fi prototype, and a site detailing the design process can be viewed by clicking on the buttons below:
+      </p>
+      <div>
+        <button onclick="window.open(`https://www.figma.com/proto/PnHMpd2EHsSG9SDe2iR8gI/G2-High-fidelity-prototype?node-id=1280%3A96928&viewport=241%2C48%2C0.02&scaling=scale-down&starting-point-node-id=1280%3A96928`)">View Hi-Fi Prototype</button>
+        <button onclick="window.open(`https://junkmailacc.wixsite.com/hikinghelper`)">View Design Process</button>
+      </div>
+    </dialog>
+    <dialog id="school-project-cs3240-individual" close>
+      <div class="close-btn"><button onclick="closeModal(`school-project-cs3240-individual`)">Close</button></div>
+      <h2>J'Apprend</h2>
+      <p class="p-bold">Motivation</p>
+      <p>
+        This prototype was developed for the module's Individual Design Exercise. This hypothetical application would help 
+        make learning the French language more effective.
+      </p>
+      <p class="p-bold">Design Process</p>
+      <ul>
+        <li><p>
+          Design considerations: based on readings provided, I identified certain methods that make learning more effective.
+          These methods are:
+          <p>1) Adopting the harder-to-learn condition (English-to-French).</p>
+          <p>
+            2) Adopting immediate testing (after the user has just learned something new), followed by delayed tests.
+            These tests should be open-ended.
+          </p>
+          <p>3) Lessons should be short.</p>
+        </p></li>
+        <li><p>
+          Detailing the user journey: by detailing each step that a typical user would take when using this application, I am
+          better able to identify potential issues experienced by users.
+        </p></li>
+        <li><p>Sketching and Low-Fidelity (Lo-Fi) prototyping using Balsamiq.</p></li>
+        <li><p>
+          High-Fidelity (Hi-Fi) prototyping using Figma: I strived to use heuristic evaluation based on 
+          Nelson's Heuristics. Some of the heuristics I adhered to are:
+          <p>
+            1) User control and freedom - users should be able to navigate the application easily, with as few 
+            actions as possible.
+          </p>
+          <p>
+            2) Match between system and the real world - the application is modelled after flash cards, and there 
+            terms used in the application are widely used.
+          </p>
+          <p>
+            3) Aesthetic and minimalist design - the application has a simple colour scheme and does not have a cluttered design.
+          </p>
+        </p></li>
+      </ul>
+      <p class="p-bold">Trying out J'Apprend</p>
+      <p>The Hi-Fi prototype for J'Apprend, and a PDF detailing the design process can be viewed by clicking on the buttons below:</p>
+      <div>
+        <button onclick="window.open(`https://www.figma.com/proto/ls5Ea06LYKYalUUZiShDOr/CS3240-Indiv-Design-Exercise?node- id=54%3A2054&scaling=scale-down&page-id=0%3A1&starting-point-node-id=54%3A2054`)">View Hi-Fi Prototype</button>
+        <button onclick="window.open('./documents/cs3240-ide.pdf')" >View Design Process</button>
+      </div>
+    </dialog>
+    <dialog id="school-project-cs2113t" close>
+      <div class="close-btn"><button onclick="closeModal(`school-project-cs2113t`)">Close</button></div>
+      <h2>E-Duke-8</h2>
+      <p class="p-italics" style="text-align: center;">Pronounced 'Educate'</p>
+      <p class="p-bold">Motivation</p>
+      <p>
+        This Java application was built with the intention of making the learning of programming concepts more 
+        effective by gamifying the learning process.
+      </p>
+      <p class="p-bold">Contributions</p>
+      <ul>
+        <li><p>
+          Based on my team's discussiosn about the application's architecture, I made Unified Modelling Language (UML) 
+          and Sequential diagrams using draw.io. 
+        </p></li>
+        <li><p>
+          In the application, users can add, delete, update and list out notes that are attached to particular topics.
+          I implemented these functionalities using Object-Oriented Programming principles such as SOLID and SLAP.
+          In addition, I wrote the relevant unit tests. 
+        </p></li>
+        <li><p>I resolved some of the bugs and issues raised after our peers tested our application. </p></li>
+        <li><p>I contributed to the application's documentation.</p></li>
+      </ul>
+      <p class="p-bold">Trying out E-Duke-8</p>
+      <p>
+        The code for E-Duke-8, the user guide, and the link to download the JAR file can be accessed by clicking on 
+        the buttons below:
+      </p>
+      <div>
+        <button onclick="window.open(`https://github.com/joelngyx/tp`)">View Code</button>
+        <button onclick="window.open(`https://ay2021s1-cs2113t-f12-3.github.io/tp/UserGuide.html`)">View User Guide</button>
+        <button onclick="window.open(`https://github.com/AY2021S1-CS2113T-F12-3/tp/releases/tag/v2.1`)">Download E-Duke-8</button>
+      </div>
+    </dialog>
+    <dialog id="school-project-cg2271" close>
+      <div class="close-btn"><button onclick="closeModal(`school-project-cg2271`)">Close</button></div>
+      <h2>CG2271 [Real-Time Operating Systems] Team Project</h2>
+      <video id="cg2271vid">
+        <source src="./documents/TEAM-40.mp4" type="video/mp4">
+        <p>Your browser does not support the video tag.</p>
+      </video>
+      <button onclick="toggleVideo('cg2271vid')">Pause/Play</button>
+      <p class="p-italics" style="text-align: center;">A video displaying the capabilities of our robot.</p>
+      <p class="p-bold">Motivation</p>
+      <p>
+        This project required a wheeled robot, controlled by an android application via a Bluetooth Low Energy connection, 
+        to traverse a course arranged by the teaching staff. In addition, the robot had to have functionalities such as: 
+        <ul>
+          <li><p>
+            Having lights switch on and off in a particular order, according to the action being performed.
+          </p></li>
+          <li><p>
+            Playing a soundtrack continuously.
+          </p></li>
+          <li><p>
+            A self-driving mode where the robot has to navigate a small obstacle course without any intervention.
+          </p></li>
+        </ul>
+      </p>
+      <p>
+        The robot was built on a FRDM-KL25Z microcontroller, with CMSIS-RTOS RTX (a Real Time Operating System 
+        interface for Cortex-M processor-based devices) for scheduling and threading.
+      </p>
+      <p class="p-bold">Contributions</p>
+      <ul>
+        <li><p>
+          I implemented a thread that was responsible for the lights on the robot. The lights had to blink in a 
+          particular order based on the actions taken by the robot. For example, when the robot is stationary,
+          all lights must be lighted up, and if the robot is not stationary, the front lights must flash in a 
+          particular order, with a specified delay.
+        </p></li>
+        <li><p>
+          I contributed to some of the code for the IRQ (Interrupt Request) Handlers. IRQ Handlers allow the robot 
+          to react to detected signals from the hardware components (such as Ultrasonic Sensors).
+        </p></li>
+      </ul>
+      <p>The PDF detailing the architecture of our robot could be viewed through the button below:</p>
+      <div>
+        <button onclick="window.open('./documents/TEAM-40.pdf')">View Robot's Architecture</button>
+      </div>
+    </dialog>
+    <dialog id="school-project-cg4002" close>
+      <div class="close-btn"><button onclick="closeModal(`school-project-cg4002`)">Close</button></div>
+      <h2>CG4002 [Computer Engineering Capstone Project]</h2>
+      <p class="p-bold">Motivation</p>
+      <p>
+        This objective of this project is to develop a laser tag system that is playable with 2 players.
+        Some requirements of this project include:
+        <ul>
+          <li><p>
+            Triggering actions in the game (such as throwing a grenade) through specific gestures from the user.
+          </p></li>
+          <li><p>
+            Maintenance and recovery of Bluetooth Low Energy connection that connects the various components
+            of the laser tag system.
+          </p></li>
+          <li><p>
+            An Augmented Reality application on mobile devices for the gameplay.
+          </p></li>
+        </ul>
+      </p>
+      <p class="p-bold">Contributions</p>
+      <ul>
+        <li><p>
+          I implemented multithreaded code that established, maintained and recovered BLE connections between
+          the hardware sensors (Bluno Beetles) and the computer.
+        </p></li>
+        <li><p>
+          I implemented code in the hardware sensors to perform a threeway-handshake and communicate 
+          with the connected computer.
+        </p></li>
+        <li><p>
+          I contributed to the integration of my code with the rest of the team's code.
+        </p></li>
+      </ul>
+      <p>
+        The code I wrote for the individual check-in milestone could be viewed through the button below. This is 
+        the first milestone of the module, where we demonstrate our individually written code for our respective roles 
+        to the teaching staff. The code was written according to a requirements list provided.
+      </p>
+      <div>
+        <button onclick="window.open(`https://github.com/joelngyx/CG4002_Internal_Comms`)">View Code</button>
+      </div>
+    </dialog>
+    <dialog id="arttero" close>
+      <div class="close-btn"><button onclick="closeModal(`arttero`)">Close</button></div>
+      <h2>Some of my contributions to the interest group's social media page on Instagram</h2>
+      <img src="./assets//arttero-assets/arttero1.png">
+      <img src="./assets//arttero-assets/arttero2.png">
+      <img src="./assets//arttero-assets/arttero3.png">
+      <img src="./assets//arttero-assets/arttero4.png">
+      <img src="./assets//arttero-assets/arttero5.png">
+      <img src="./assets//arttero-assets/arttero6.png">
+    </dialog>
+    <dialog id="myart" close>
+      <div class="close-btn"><button onclick="closeModal(`myart`)">Close</button></div>
+      <h2>Some of my illustrations</h2>
+      <img src="./assets/my-art/my-art-1.jpg">
+      <img src="./assets/my-art/my-art-2.jpg">
+      <img src="./assets/my-art/my-art-3.jpg">
+      <img src="./assets/my-art/my-art-4.png">
+      <img src="./assets/my-art/my-art-5.jpg">
+      <img src="./assets/my-art/my-art-6.jpg">
+      <div>
+        <button onclick="window.open(`https://www.instagram.com/nihil.inherit/`)">View my art on Instagram</button>
+      </div>
     </dialog>
     <script src="index.js"></script>
   </body>
